@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Challenge 2 with extended content">
     <title>Document</title>
 </head>
 
@@ -15,15 +16,33 @@
     <main>
         <section>
             <h1>Titre</h1>
-            <img
-                src="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374">
+            <img src="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374"
+                alt="Image code source" title="Code source"><br>
+            <a href="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374"
+                target="blank">Image code source</a>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel pariatur laboriosam consequuntur!
                 Ullam, animi! Quaerat maxime suscipit ad, amet odio commodi praesentium corporis tempore atque, itaque
                 eum, laboriosam animi?</p>
         </section>
+        <section>
+            <div>
+                <label for="name">Nom<sup>*</sup></label>
+                <input type="text" id="name" required autofocus value><br>
+
+                <label for="firstname">Prénom<sup>*</sup></label>
+                <input type="text" id="firstname" required><br>
+
+                <label for="Mail">Mail<sup>*</sup></label>
+                <input type="email" id="Mail" name="Email" placeholder="@ votre email" value=""><br>
+
+                <label for="tel">Téléphone</label>
+                <input type="text" id="tel" name="phone" maxlength="10" value=""><br>
+
+                <input type="submit" value="Envoyer">
+            </div>
+        </section>
     </main>
     <footer></footer>
-
 </body>
 
 </html>
