@@ -314,7 +314,7 @@ a.link1:active {
 
 /* div pseudo-classe black & white */
 
-div:first-child {
+div .grey:only-of-type {
     filter: grayscale(100%);
 }
 
