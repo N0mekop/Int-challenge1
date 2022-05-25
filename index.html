@@ -3,6 +3,9 @@
 
 <head>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+    </style>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,30 +15,44 @@
 
 <body>
     <header>
-        <nav></nav>
+        <section class="top-nav" data-sub_menu_auto_close="true">
+            <div>
+                Logo
+            </div>
+            <input id="menu-toggle" type="checkbox" />
+            <label class='menu-button-container' for="menu-toggle">
+                <div class='menu-button'></div>
+            </label>
+            <ul class="menu">
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#projets">Projets réalisés</a></li>
+                <li><a href="#etudes">Études</li>
+                <li><a href="#articles">Articles</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </section>
     </header>
     <main>
-        <section>
-            <h1>MON PORTFOLIO</h1>
-            <img src="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374"
-                class="img" alt="Image code source" title="Code source"><br>
-            <a href="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374"
-                class="link1" target="blank">Image code source</a>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel pariatur laboriosam consequuntur!
-                Ullam, animi! Quaerat maxime suscipit ad, amet odio commodi praesentium corporis tempore atque, itaque
-                eum, laboriosam animi?</p>
+        <h1>MON PORTFOLIO</h1>
+        <img src="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374"
+            class="img" id="apropos" alt="Image code source" title="Code source"></br>
+        <a href="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374"
+            class="link1" target="blank">Image code source</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel pariatur laboriosam consequuntur!
+            Ullam, animi! Quaerat maxime suscipit ad, amet odio commodi praesentium corporis tempore atque, itaque
+            eum, laboriosam animi?</p>
         </section>
         <section>
             <div>
                 <img src="https://thumbnails.production.thenounproject.com/StWOrlJs4YJxj0sgb4HFfBn78Go=/fit-in/1000x1000/photos.production.thenounproject.com/photos/712FF70E-9C80-4710-B4A5-1CB5220CDEE4.jpg"
-                    class="img" alt="Image working" title="Au trvail!">
+                    class="img" id="projets" alt="Image working" title="Au travail!">
             </div>
             <div>
                 <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
-                    class="img">
+                    class="img" id="etudes" alt="Image fatigue" title="JPP">
             </div>
         </section>
-        <section>
+        <section id="contact">
             <div>
                 <label for="name">Nom<sup>*</sup></label>
                 <input type="text" id="name" required autofocus value><br>
