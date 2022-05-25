@@ -132,10 +132,15 @@ table {
 
 /* Mon CSS */
 
-/* hover img1 */
+.img {
+    border-radius: 3px;
+    width: 30%;
+}
 
-.img1:hover,
-.img1:active {
+/* hover img */
+
+img:hover,
+img:active {
     opacity: 0.5;
 }
 
@@ -144,4 +149,10 @@ table {
 a.link1:hover,
 a.link1:active {
     font-size: 110%;
+}
+
+/* div pseudo-classe black & white */
+
+div:first-child {
+    filter: grayscale(100%);
 }
