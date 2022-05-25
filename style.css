@@ -132,7 +132,42 @@ table {
 
 /* Mon CSS */
 
+/* Liens header brillants au survol */
+
+li:hover,
+li:active {
+    color: aliceblue;
+  text-shadow:0px 0px 3px aliceblue;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+
+/* Liens modifiés */
+
+a:link {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:visited {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:hover {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+a:active {
+    text-decoration: none;
+    color: aliceblue;
+}
+
 /* Menu Burger repris d'un code plutôt sympa trouvé sur internet, je m'arrache les cheveux à essayer de comprendre pour pas l'ajouter sans savoir comment ca marche éxactement!*/
+
 
 .top-nav {
     display: flex;
@@ -221,8 +256,6 @@ table {
         left: 0;
         flex-direction: column;
         width: 100%;
-        justify-content: center;
-        align-items: center;
     }
 
     #menu-toggle~.menu li {
@@ -243,6 +276,7 @@ table {
     .menu>li {
         display: flex;
         justify-content: center;
+        align-items: center;
         margin: 0;
         padding: 0.5em 0;
         width: 100%;
@@ -256,40 +290,6 @@ table {
 }
 
 /* ------------------------------------------------------------- */
-
-/* Liens header brillants au survol */
-
-li:hover,
-li:active {
-    color: aliceblue;
-  text-shadow:0px 0px 3px aliceblue;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
-}
-
-/* Liens modifiés */
-
-a:link {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-a:visited {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-a:hover {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-a:active {
-    text-decoration: none;
-    color: aliceblue;
-}
 
 /* Bg, images etc... */
 
