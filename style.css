@@ -178,6 +178,20 @@ a:active {
     color: white;
 }
 
+/* Bg, images etc... */
+
+body {
+    background-color: #eea849;
+}
+
+/* Mobile responsive bg*/
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: #363636;
+    }
+}
+
 /* Menu Burger repris d'un code plutôt sympa trouvé sur internet, je m'arrache les cheveux à essayer de comprendre pour pas l'ajouter sans savoir comment ca marche éxactement!*/
 
 /* Nav bar */
@@ -188,7 +202,7 @@ a:active {
     align-items: center;
     justify-content: space-between;
     background-color: #00BAF0;
-    background: linear-gradient(to left, #f46b45, #eea849);
+    background: linear-gradient(to left, #363636, #eea849);
     color: white;
     height: 25px;
     padding: 1em;
@@ -322,12 +336,6 @@ a:active {
         font-size: 1.25rem;
         line-height: 1.25;
     }
-}
-
-/* Bg, images etc... */
-
-body {
-    background-color: #363636;
 }
 
 .img {
