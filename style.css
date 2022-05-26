@@ -130,44 +130,57 @@ table {
     border-spacing: 0;
 }
 
-/* Mon CSS */
+/* ------------------------------------------------------------- */
 
 /* Liens header brillants au survol */
 
 li:hover,
 li:active {
-    color: aliceblue;
-  text-shadow:0px 0px 3px aliceblue;
-  -moz-transition: all 0.2s ease-in;
-  -o-transition: all 0.2s ease-in;
-  -webkit-transition: all 0.2s ease-in;
-  transition: all 0.2s ease-in;
+    color: white;
+    text-shadow: 0px 0px 3px white;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
 }
 
-/* Liens modifiés */
+/* Class="link" brillants au survol */
+
+.link:hover,
+.link:active {
+    color: white;
+    text-shadow: 0px 0px 3px white;
+    -moz-transition: all 0.2s ease-in;
+    -o-transition: all 0.2s ease-in;
+    -webkit-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+}
+
+/* Liens modifiés en blanc */
 
 a:link {
     text-decoration: none;
-    color: aliceblue;
+    color: white;
 }
 
 a:visited {
     text-decoration: none;
-    color: aliceblue;
+    color: white;
 }
 
 a:hover {
     text-decoration: none;
-    color: aliceblue;
+    color: white;
 }
 
 a:active {
     text-decoration: none;
-    color: aliceblue;
+    color: white;
 }
 
 /* Menu Burger repris d'un code plutôt sympa trouvé sur internet, je m'arrache les cheveux à essayer de comprendre pour pas l'ajouter sans savoir comment ca marche éxactement!*/
 
+/* Nav bar */
 
 .top-nav {
     display: flex;
@@ -176,7 +189,7 @@ a:active {
     justify-content: space-between;
     background-color: #00BAF0;
     background: linear-gradient(to left, #f46b45, #eea849);
-    color:aliceblue;
+    color: white;
     height: 25px;
     padding: 1em;
 }
@@ -187,12 +200,17 @@ a:active {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: 20px;
 }
+
+/* Expacement menu */
 
 .menu>li {
     margin: 0 1rem;
     overflow: hidden;
 }
+
+/* Position du bouton menu bugger */
 
 .menu-button-container {
     display: none;
@@ -207,6 +225,8 @@ a:active {
 #menu-toggle {
     display: none;
 }
+
+/* Animation menu burger */
 
 .menu-button,
 .menu-button::before,
@@ -244,6 +264,8 @@ a:active {
     transform: rotate(-405deg);
 }
 
+/* Responsive */
+
 @media (max-width: 768px) {
     .menu-button-container {
         display: flex;
@@ -252,7 +274,7 @@ a:active {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 50px;
+        margin-top: 58px;
         left: 0;
         flex-direction: column;
         width: 100%;
@@ -268,7 +290,7 @@ a:active {
 
     #menu-toggle:checked~.menu li {
         border: 1px solid #333;
-        height: 2.3em;
+        height: 1.5em;
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
@@ -291,6 +313,17 @@ a:active {
 
 /* ------------------------------------------------------------- */
 
+/* Texte responsive */
+
+@media (max-width: 768px) {
+
+    p,
+    a {
+        font-size: 1.25rem;
+        line-height: 1.25;
+    }
+}
+
 /* Bg, images etc... */
 
 body {
@@ -305,11 +338,6 @@ body {
 img:hover,
 img:active {
     opacity: 0.5;
-}
-
-a.link1:hover,
-a.link1:active {
-    font-size: 110%;
 }
 
 /* div pseudo-classe black & white */
