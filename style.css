@@ -192,6 +192,29 @@ body {
     }
 }
 
+/* HERO */
+
+.hero-container {
+    position: relative;
+}
+
+.hero h1 {
+    display: block;
+    font-size: 70px;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+}
+
+.hero img {
+    max-width: 100%;
+}
+
 /* Menu Burger repris d'un code plutôt sympa trouvé sur internet, je m'arrache les cheveux à essayer de comprendre pour pas l'ajouter sans savoir comment ca marche éxactement!*/
 
 /* Nav bar */
@@ -204,7 +227,7 @@ body {
     background-color: #00BAF0;
     background: linear-gradient(to left, #363636, #eea849);
     color: white;
-    height: 25px;
+    height: 50px;
     padding: 1em;
 }
 
@@ -288,10 +311,11 @@ body {
     .menu {
         position: absolute;
         top: 0;
-        margin-top: 58px;
+        margin-top: 50px;
         left: 0;
         flex-direction: column;
         width: 100%;
+        z-index: 10;
     }
 
     #menu-toggle~.menu li {
@@ -304,7 +328,7 @@ body {
 
     #menu-toggle:checked~.menu li {
         border: 1px solid #333;
-        height: 1.5em;
+        height: 50px;
         padding: 0.5em;
         transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
     }
@@ -325,7 +349,7 @@ body {
     }
 }
 
-/* ------------------------------------------------------------- */
+/* ---------------------------------------------------------------------------------------------------- */
 
 /* Texte responsive (Peut être utile plus tard)
 
@@ -354,18 +378,17 @@ body {
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    padding: 1rem;
+    padding: 0 1em 1em 1em;
 }
 
 .img-container2 {
     width: 300px;
     height: 300px;
+    overflow: hidden;
+    border-radius: 3px;
 }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
+/* PROPRIETE IMAGES FLEX BOX A CONTINUER ------------------------------------------ */
 
 /* Img border, size */
 
@@ -376,42 +399,97 @@ img {
     width: 300px;
 }
 
-.img-container img {
-    border-radius: 3px;
-}
-
-img:hover,
+.img-container2:hover,
 img:active {
     opacity: 0.5;
 }
-
-/* div pseudo-classe black & white */
 
 .grey img:only-of-type {
     filter: grayscale(100%);
 }
 
-h1 {
+#contact h2 {
     vertical-align: center;
     text-align: center;
-    margin: 20px;
-
-    font-size: 70px;
+    margin-bottom: 1em;
+    font-size: 35px;
 }
 
-/* Flexbox contacts */
+#projets h2 {
+    vertical-align: center;
+    text-align: center;
+    margin: 1em 0 1em 0;
+    font-size: 35px;
+}
 
-#contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 1em;
-    line-height: 1.5em;
+/* Contact */
+
+* {
+    box-sizing: border-box;
+} 
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
 }
 
 label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.contact-container {
+    background-color: white;
+    padding: 1em;
+}
+
+.form-part1 {
+    float: left;
+    width: 10%;
+    margin-top: 6px;
+    text-align: end;
+}
+
+.form-part2 {
+    float: left;
+    width: 90%;
+    margin-top: 6px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+
+    .form-part1,
+    .form-part2,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    .form-part1 {
+        text-align: center;
+    }
 }
