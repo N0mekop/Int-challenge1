@@ -178,7 +178,7 @@ a:active {
     color: white;
 }
 
-/* Bg, images etc... */
+/* Bg */
 
 body {
     background-color: #eea849;
@@ -327,7 +327,7 @@ body {
 
 /* ------------------------------------------------------------- */
 
-/* Texte responsive */
+/* Texte responsive (Peut être utile plus tard)
 
 @media (max-width: 768px) {
 
@@ -338,9 +338,46 @@ body {
     }
 }
 
-.img {
+*/
+
+/* Flex box */
+
+.photo-grid-container {
+    display: flex;
+    justify-content: center;
+}
+
+.photo-grid {
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+}
+
+.img-container2 {
+    width: 300px;
+    height: 300px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Img border, size */
+
+#apropos img {
+    display: block;
+    margin: auto;
+    padding: auto;
+    width: 300px;
+}
+
+.img-container img {
     border-radius: 3px;
-    width: 30%;
 }
 
 img:hover,
@@ -350,7 +387,7 @@ img:active {
 
 /* div pseudo-classe black & white */
 
-div .grey:only-of-type {
+.grey img:only-of-type {
     filter: grayscale(100%);
 }
 
@@ -360,4 +397,21 @@ h1 {
     margin: 20px;
 
     font-size: 70px;
+}
+
+/* Flexbox contacts */
+
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em;
+    line-height: 1.5em;
+}
+
+label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
