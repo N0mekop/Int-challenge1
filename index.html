@@ -19,34 +19,34 @@
             <div>
                 Logo
             </div>
-            <input id="menu-toggle" type="checkbox" />
+            <input id="menu-toggle" type="checkbox">
             <label class='menu-button-container' for="menu-toggle">
                 <div class='menu-button'></div>
             </label>
             <ul class="menu">
                 <li><a href="#apropos">À propos</a></li>
                 <li><a href="#projets">Projets réalisés</a></li>
-                <li><a href="#etudes">Études</li>
+                <li><a href="#etudes">Études</a></li>
                 <li><a href="#articles">Articles</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </section>
     </header>
     <main>
-        <h1>MON PORTFOLIO</h1>
-        <div class="img-container" id="apropos">
-            <img src="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374"
-                alt="Image code source" title="Code source"><br />
+        <div class="hero-container">
+            <div class="hero">
+                <h1>MON PORTFOLIO</h1>
+                <img src="https://gtgraphics.de/system/images/public/img-0325-panorama-ZMdI9rnd.jpg?1651951184"
+                    alt="Image panorama">
+                <div id="apropos">
+                </div>
+            </div>
         </div>
-        <a href="https://media.istockphoto.com/photos/programming-source-code-abstract-background-picture-id1047259374"
-            class="link" target="blank">Image code source</a>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus vel pariatur laboriosam consequuntur!
-            Ullam, animi! Quaerat maxime suscipit ad, amet odio commodi praesentium corporis tempore atque, itaque
-            eum, laboriosam animi?</p>
-        <section>
+        <section id="projets">
+            <h2>Projets Réalisés</h2>
             <div class='photo-grid-container'>
                 <div class='photo-grid'>
-                    <div class="img-container2 img-container grey" id="projets">
+                    <div class="img-container2 img-container grey">
                         <img src="https://thumbnails.production.thenounproject.com/StWOrlJs4YJxj0sgb4HFfBn78Go=/fit-in/1000x1000/photos.production.thenounproject.com/photos/712FF70E-9C80-4710-B4A5-1CB5220CDEE4.jpg"
                             alt="Image working" title="Au travail!">
                     </div>
@@ -54,15 +54,15 @@
                         <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
                             alt="Image fatigue" title="JPP">
                     </div>
-                    <div class="img-container2 img-container" id="etudes">
+                    <div class="img-container2 img-container">
                         <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
                             alt="Image fatigue" title="JPP">
                     </div>
-                    <div class="img-container2 img-container" id="etudes">
+                    <div class="img-container2 img-container" id="articles">
                         <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
                             alt="Image fatigue" title="JPP">
                     </div>
-                    <div class="img-container2 img-container" id="etudes">
+                    <div class="img-container2 img-container">
                         <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
                             alt="Image fatigue" title="JPP">
                     </div>
@@ -70,24 +70,53 @@
             </div>
         </section>
         <section id="contact">
-            <div>
-                <label for="name">Nom<sup>*</sup></label>
-                <input type="text" id="name" required>
-            </div>
-            <div>
-                <label for="firstname">Prénom<sup>*</sup></label>
-                <input type="text" id="firstname" required>
-            </div>
-            <div>
-                <label for="Mail">Mail<sup>*</sup></label>
-                <input type="email" id="Mail" name="Email" placeholder="@ votre email" value="">
-            </div>
-            <div>
-                <label for="tel">Téléphone</label>
-                <input type="text" id="tel" name="phone" maxlength="10" value="">
-            </div>
-            <div>
-                <input id="submit" type="submit" value="Envoyer">
+            <div class="contact-container">
+                <form action="contact.php">
+                    <div>
+                        <h2>Me contacter</h2>
+                    </div>
+                    <div class="row">
+                        <div class="form-part1">
+                            <label for="lname">Nom</label>
+                        </div>
+                        <div class="form-part2">
+                            <input type="text" id="lname" name="nom">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-part1">
+                            <label for="fname">Prénom</label>
+                        </div>
+                        <div class="form-part2">
+                            <input type="text" id="fname" name="prénom">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-part1">
+                            <label for="choix">Choix</label>
+                        </div>
+                        <div class="form-part2">
+                            <select id="choix" name="choix">
+                                <option value="choix1">Choix 1</option>
+                                <option value="choix2">Choix 2</option>
+                                <option value="choix3">Choix 3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-part1">
+                            <label for="message">Message</label>
+                        </div>
+                        <div class="form-part2">
+                            <textarea id="message" name="message" placeholder="Quelque chose à rajouter? ..."
+                                style="height:200px"></textarea>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <input type="submit" value="Envoyer">
+                    </div>
+                </form>
             </div>
         </section>
     </main>
