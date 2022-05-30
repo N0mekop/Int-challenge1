@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <link rel="stylesheet" href="style.css">
@@ -39,79 +39,69 @@
         </div>
         <section id="projets">
             <h2>Projets Réalisés</h2>
-            <div class='photo-grid-container'>
-                <div class='photo-grid'>
-                    <div class="img-container2 img-container grey">
-                        <img src="https://thumbnails.production.thenounproject.com/StWOrlJs4YJxj0sgb4HFfBn78Go=/fit-in/1000x1000/photos.production.thenounproject.com/photos/712FF70E-9C80-4710-B4A5-1CB5220CDEE4.jpg"
-                            alt="Image working" title="Au travail!">
-                    </div>
-                    <div class="img-container2 img-container" id="etudes">
-                        <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
-                            alt="Image fatigue" title="JPP">
-                    </div>
-                    <div class="img-container2 img-container">
-                        <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
-                            alt="Image fatigue" title="JPP">
-                    </div>
-                    <div class="img-container2 img-container" id="articles">
-                        <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
-                            alt="Image fatigue" title="JPP">
-                    </div>
-                    <div class="img-container2 img-container">
-                        <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
-                            alt="Image fatigue" title="JPP">
-                    </div>
+
+            <div class='photo-grid'>
+                <div class="img-container grey">
+                    <img src="https://thumbnails.production.thenounproject.com/StWOrlJs4YJxj0sgb4HFfBn78Go=/fit-in/1000x1000/photos.production.thenounproject.com/photos/712FF70E-9C80-4710-B4A5-1CB5220CDEE4.jpg"
+                        class="img-fluid" alt="Image working" title="Au travail!">
+                </div>
+                <div class="img-container" id="etudes">
+                    <img src="https://thumbnails.production.thenounproject.com/jjbTKAU6PJhg5T6XAY7LzYgV-JU=/fit-in/1000x1000/photos.production.thenounproject.com/photos/tired_woman_sleeping_on_laptop_keyboard-scopio-ad599beb-acd1-4dcb-a285-0d8d9fbe821e.jpg"
+                        class="img-fluid" alt="Image fatigue" title="JPP">
                 </div>
             </div>
+
         </section>
         <section id="contact">
-            <div class="contact-container">
-                <form action="contact.php">
-                    <div>
-                        <h2>Me contacter</h2>
-                    </div>
-                    <div class="row">
-                        <div class="form-part1">
-                            <label for="lname">Nom</label>
+            <div class="container-bg">
+                <div class="contact-container">
+                    <form action="contact.php">
+                        <div>
+                            <h2>Me contacter</h2>
                         </div>
-                        <div class="form-part2">
-                            <input type="text" id="lname" name="nom">
+                        <div class="row">
+                            <div class="form-part1">
+                                <label for="lname">Nom</label>
+                            </div>
+                            <div class="form-part2">
+                                <input type="text" id="lname" name="nom">
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-part1">
-                            <label for="fname">Prénom</label>
+                        <div class="row">
+                            <div class="form-part1">
+                                <label for="fname">Prénom</label>
+                            </div>
+                            <div class="form-part2">
+                                <input type="text" id="fname" name="prénom">
+                            </div>
                         </div>
-                        <div class="form-part2">
-                            <input type="text" id="fname" name="prénom">
+                        <div class="row">
+                            <div class="form-part1">
+                                <label for="choix">Choix</label>
+                            </div>
+                            <div class="form-part2">
+                                <select id="choix" name="choix">
+                                    <option value="choix1">Choix 1</option>
+                                    <option value="choix2">Choix 2</option>
+                                    <option value="choix3">Choix 3</option>
+                                </select>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-part1">
-                            <label for="choix">Choix</label>
+                        <div class="row">
+                            <div class="form-part1">
+                                <label for="message">Message</label>
+                            </div>
+                            <div class="form-part2">
+                                <textarea id="message" name="message" placeholder="Quelque chose à rajouter? ..."
+                                    style="height:200px"></textarea>
+                            </div>
                         </div>
-                        <div class="form-part2">
-                            <select id="choix" name="choix">
-                                <option value="choix1">Choix 1</option>
-                                <option value="choix2">Choix 2</option>
-                                <option value="choix3">Choix 3</option>
-                            </select>
+                        <br>
+                        <div class="row">
+                            <input type="submit" value="Envoyer">
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="form-part1">
-                            <label for="message">Message</label>
-                        </div>
-                        <div class="form-part2">
-                            <textarea id="message" name="message" placeholder="Quelque chose à rajouter? ..."
-                                style="height:200px"></textarea>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <input type="submit" value="Envoyer">
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
