@@ -190,14 +190,22 @@ body {
 
 /* Nav bar */
 
-label {
+.header {
     color: white;
-    margin: 0 0 0 20px;
+    margin: 1em 0 1em 1em;
     cursor: pointer;
 }
 
-a {
-    margin: 0 0 0 20px;
+.menu {
+    margin: 1em 0 0 0;
+}
+
+.menu a {
+    padding: 0 0 1em 0;
+}
+
+li {
+    margin: 0.5em 0 0 0;
 }
 
 #header-menu {
@@ -294,7 +302,7 @@ textarea {
     resize: vertical;
 }
 
-label {
+#contact label {
     padding: 12px 12px 12px 0;
     display: inline-block;
 }
